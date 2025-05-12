@@ -3,3 +3,5 @@ torch
 torchvision
 Pillow
 pyttsx3
+gtts
+gdown

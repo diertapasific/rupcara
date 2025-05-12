@@ -13,7 +13,7 @@ import os
 num_classes = 22
 
 # Load class names from the dataset directory
-dataset_dir = "/content/drive/MyDrive/Projects/Rupcara/rupiah_dataset"
+dataset_dir = "/rupiah_dataset"
 class_names = sorted(os.listdir(dataset_dir))  # Get class names from folder structure
 
 # Load the pretrained ResNet model
@@ -21,7 +21,7 @@ model = models.resnet18(weights='IMAGENET1K_V1')  # Load a pretrained ResNet18 m
 model.fc = nn.Linear(model.fc.in_features, num_classes)  # Adjust the final layer to match the number of classes
 
 # Load the model weights from the checkpoint
-model.load_state_dict(torch.load("/content/drive/MyDrive/Projects/Rupcara/r3upiah_model.pth"))
+model.load_state_dict(torch.load("./r3upiah_model.pth"))
 model.eval()
 
 # Define image preprocessing
