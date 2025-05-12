@@ -13,7 +13,7 @@ import os
 num_classes = 22
 
 # Load class names from the dataset directory
-dataset_dir = "/rupiah_dataset"
+dataset_dir = "./rupiah_dataset"
 class_names = sorted(os.listdir(dataset_dir))  # Get class names from folder structure
 
 # Load the pretrained ResNet model
