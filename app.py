@@ -32,7 +32,7 @@ transform = transforms.Compose([
 
 # Streamlit interface
 st.title("Rupcara - Money Recognition Model")
-
+st.subheader("by Dierta Pasific")
 st.write("Upload an image to recognize the denomination.")
 
 img_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
